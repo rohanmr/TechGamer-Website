@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="cabecalho">
+                <div class="container container-cabecalho">
+                    <a href="{% url 'home' %}" id="logo">Tech-GAMER</a>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'all' %}">Latest</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section id="banner" style="Background-image:url('{% static 'core/img/back.jpg' %}')">
+                <div class="container">  
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="container-main">
+                        <main>
+                            <article>
+                                <h2 class="heading-data">Call of Duty: Vanguard Multiplayer Mode Is Free to Access for 2 Weeks</h2>
+                                <span>Published: 30/03/2022</span>
+                                <img src="{% static 'core/img/call_of_duty_vanguard_free_access_gondola_map_activision_1648532792198.webp' %}" alt="">
+                                <p>Call of Duty: Vanguard Free Access will be active from March 30 to April 13.</p>
+                                <a href="{% url 'page11' %}"><button class="submit-btn">Read more</button></a>
+                            </article>
+                            <article>
+                                <h2>New State Mobile 'Play Erangel 2051' Event Goes Live; Limited-Time Challenges, Special Rewards</h2>
+                                <span>Published: 23/03/2022</span>
+                                <img src="{% static 'core/img/new_state_mobile_march_2022_update_mclaren_1648204963308.webp' %}" alt="">
+                                <p>New State Mobile Play Erangel 2051 Event will last until March 30.</p>
+                                <a href="{% url 'page12' %}"><button class="submit-btn">Read more</button></a>
+                            </article>
+                            <article>
+                                <h2>Battlegrounds Mobile India Getting Lamborghini With Latest Update, Players Can Now Access 8 New Skins</h2>
+                                <span>Published:25/03/2022</span>
+                                <img src="{% static 'core/img/bgmi_lamborghini_twitter_1648210577081.webp' %}" alt="">
+                                <p>BGMI players can access the new Lamborghini Crate from March 25 to May 3.</p>
+                                <a href="{% url 'page13' %}"><button class="submit-btn">Read more</button></a>
+                            </article>    
+                            <article>
+                                <h2>Epic Games Store Spring Sale 2022: Cyberpunk 2077, Horizon Zero Dawn, and More</h2>
+                                <span>Published: 29/03/2022</span>
+                                <img src="{% static 'core/img/cyberpunk_2077_xbox_series_x_review_1608123363995.webp' %}" alt="">
+                                <p>Epic Games Store Spring Sale 2022 will be live until April 7.</p>
+                                <a href="{% url 'page14' %}"><button class="submit-btn">Read more</button></a>
+                            </article>    
+                            <article>
+                                <h2>Far Cry 6 Free Weekend Timings Announced, to Include Stranger Things Crossover Mission</h2>
+                                <span>Published: 24/03/2022</span>
+                                <img src="{% static 'core/img/far_cry_6_stranger_things_the_vanishing_netflix_ubisoft_1648126593406.webp' %}" alt="">
+                                <p>Gamers can enter a twisted version of Yara with a special crossover mission later today.</p>
+                                <a href="{% url 'page15' %}"><button class="submit-btn">Read more</button></a>
+                            </article> 
+                            <div class="center">
+                                <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="{% url 'home' %}">1</a>
+                                <a href="{% url 'data' %}">2</a>
+                                <a href="{% url 'data1' %}" class="active">3</a>
+                                <a href="#">&raquo;</a>
+                                </div>
+                              </div>   
+                        </main>
+                        <aside>
+                            <div class="aside-item" id="sobreMim">
+                                <h2>Post Contributor</h2>
+                                <img src="{% static 'core/img/gaminglogo.jpg' %}" alt="">
+                                <h3>Maindarkar Rohan</h3>
+                                <p>A Normal student of CSE Background having interest in upcoming Gaming technology.</p>
+                            </div>
+                            <div class="aside-item">
+                                <h2>Categories</h2>
+                                <nav id="categorias-links">
+                                    <ul>
+                                        <li><a href="{% url 'home' %}">Latest Games<span>5</span></a></li>
+                                        <li><a href="{% url 'data' %}">Andriod Games<span>3</span></a></li>
+                                        <li><a href="{% url 'data1' %}">Top Gaming<span>5</span></a></li>
+                                        
+                                    </ul>
+                                </nav>
+                               
+                            </div>
+                            <div class="aside-item">
+                                <h2>Popular Tags</h2>
+                                <nav id="tags-popular">
+                                    <a href="{% url 'latest1' %}">Latest Games</a>
+                                    <a href="{% url 'latest2' %}">Andriod Games</a>
+                                    <a href="{% url 'latest3' %}">Top Gaming</a>
+                                </nav>
+
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                   <p><strong><span>Developed By:</span> <a href="https://www.linkedin.com/in/rohan-maindarkar-b45000227/" target="_blank">Maindarkar Rohan</a><strong></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

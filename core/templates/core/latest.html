@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="cabecalho">
+                <div class="container container-cabecalho">
+                    <a href="{% url 'home' %}" id="logo">Tech-GAMER</a>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'all' %}">Latest</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section id="banner" style="Background-image:url('{% static 'core/img/back.jpg' %}')">
+                <div class="container">
+            
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="container-main">
+                        <main>
+                            <article>
+                                <h2 class="heading-data">GRAND THEFT AUTO V
+                                    GTA 5 new-gen version releasing on March 15, check India price for PS5, Xbox Series X|S</h2>
+                                <span>Published: 27/03/2022</span>
+                                <a href="{% url 'page1' %}"><button class="submit-btn">Read more</button></a>
+                            </article>
+                            <article>
+                                <h2>Marvel's Avengers game to get early access on Google Stadia</h2>
+                                <span>Published: 28/03/2022</span>
+                                <a href="{% url 'page2' %}"><button class="submit-btn">Read more</button></a>
+                            </article>
+                            <article>
+                                <h2>GTA+ Subscription Service for GTA Online on PS5 and Xbox Series S/X Announced</h2>
+                                <span>Published: 25/03/2022</span>
+                                <a href="{% url 'page3' %}"><button class="submit-btn">Read more</button></a>
+                            </article>    
+                            <article>
+                                <h2>Ubisoft possibly developing new Prince of Persia game</h2>
+                                <span>Published: 25/03/2022</span>
+                                <a href="{% url 'page4' %}"><button class="submit-btn">Read more</button></a>
+                            </article>    
+                            <article>
+                                <h2>Epic introduces Fortnite Zero Build, a permanent battle royale mode with no building
+                                </h2>
+                                <span>Published: 24/03/2022</span>
+                                <a href="{% url 'page5' %}"><button class="submit-btn">Read more</button></a>
+                            </article>    
+                        </main>
+                        <aside>
+                            <div class="aside-item">
+                                <h2>Categories</h2>
+                                <nav id="categorias-links">
+                                    <ul>
+                                        <li><a href="{% url 'home' %}">Latest Games<span>5</span></a></li>
+                                        <li><a href="{% url 'data' %}">Andriod Games<span>3</span></a></li>
+                                        <li><a href="{% url 'data1' %}">Top Gaming<span>5</span></a></li>
+                                        
+                                    </ul>
+                                </nav>
+                               
+                            </div>
+                            <div class="aside-item">
+                                <h2>Popular Tags</h2>
+                                <nav id="tags-popular">
+                                    <a href="{% url 'latest1' %}">Latest Games</a>
+                                    <a href="{% url 'latest2' %}">Andriod Games</a>
+                                    <a href="{% url 'latest3' %}">Top Gaming</a>
+                                </nav>
+
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                   <p><strong><span>Developed By:</span> <a href="https://www.linkedin.com/in/rohan-maindarkar-b45000227/" target="_blank">Maindarkar Rohan</a><strong></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

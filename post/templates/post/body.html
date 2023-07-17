@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Post</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'core/css/stylepost.css' %}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="cabecalho">
+                <div class="container container-cabecalho">
+                    <a href="{% url 'home' %}" id="logo">Tech-GAMER</a>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'all' %}">Latest</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section id="banner">
+                <div class="container">
+            
+                </div>
+            </section>
+{% block content %}
+
+{% endblock content %}
+<div class="aside-item">
+    <div class="categorias-links">
+        <h2><span> About Author : </span>Maindarkar Rohan</h2>
+            <p class="para">As a writer on technology, is interested in open-source technology, cybersecurity, consumer privacy, and loves to read and write about how the Internet works.</p>
+    </div>
+    <h2> Other Categories</h2>
+    <nav id="categorias-links">
+        <ul>
+            <li><a href="{% url 'home' %}">Latest Games<span>5</span></a></li>
+            <li><a href="{% url 'data' %}">Andriod Games<span>3</span></a></li>
+            <li><a href="{% url 'data1' %}">Top Gaming<span>5</span></a></li>
+        </ul>
+    </nav>
+</div>
+</main>
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<p><strong><span>Developed By:</span> <a href="https://www.linkedin.com/in/darshan-keskar-110340196/" target="_blank">Maindarkar Rohan</a><strong></p>
+</div>
+</footer>
+</div>
+</body>
+</html>

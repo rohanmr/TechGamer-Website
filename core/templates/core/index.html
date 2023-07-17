@@ -1,0 +1,49 @@
+{% extends 'core/header.html' %}
+{% load static %}
+{% block maincontent %}
+<div class="container">
+    <div class="container-main">
+        <main>
+            <article>
+                <h2 class="heading-data">GRAND THEFT AUTO V
+                    GTA 5 new-gen version releasing on March 15, check India price for PS5, Xbox Series X|S</h2>
+                <span>Published: 27/03/2022</span>
+                <img src="{% static 'core/img/gta5.webp' %}" alt="">
+                <p>New Delhi: Rockstar Games, maker of the Grand Theft Auto V has revealed that the new versions of GTAV and GTA Online will be launched on March 15.</p>
+                <a href="{% url 'page1' %}"><button class="submit-btn">Read more</button></a>
+            </article>
+            <article>
+                <h2>Marvel's Avengers game to get early access on Google Stadia</h2>
+                <span>Published: 28/03/2022</span>
+                <img src="{% static 'core/img/marvels.webp' %}" alt="">
+                <p>San Francisco: Marvel's Avengers by Square Enix is one of the exciting new games coming to Google's Cloud gaming service Stadia on September 1 with 72-hour early access.</p>
+                <a href="{% url 'page2' %}"><button class="submit-btn">Read more</button></a>
+            </article>
+            <article>
+                <h2>GTA+ Subscription Service for GTA Online on PS5 and Xbox Series S/X Announced</h2>
+                <span>Published: 25/03/2022</span>
+                <img src="{% static 'core/img/gta_plus_rockstar_games_1648463434561.webp' %}" alt="">
+                <p>GTA+ — announced Friday — is a new subscription service for Grand Theft Auto Online, available only on PlayStation 5 and Xbox Series S/X. Those who pay the GTA+ monthly fee — $5.99 (roughly Rs. 460) a month — will get in-game
+                    currency to spend on the evolving open-world game, along with exclusive properties, vehicle upgrades, member-only discounts, and other benefits. Rockstar Games has suggested that GTA+ members may also gain access to unlock
+                    older gameplay updates, or previous time-limited content in the game.</p>
+                <a href="{% url 'page3' %}"><button class="submit-btn">Read more</button></a>
+            </article>
+            <article>
+                <h2>Ubisoft possibly developing new Prince of Persia game</h2>
+                <span>Published: 25/03/2022</span>
+                <img src="{% static 'core/img/pop.jpg' %}" alt="">
+                <p>Prince of Persia: The Sands of Time is a 2010 American-British action fantasy film directed by Mike Newell. The film was written by Jordan Mechner, Boaz Yakin, Doug Miro, and Carlo Bernard, produced by Jerry Bruckheimer, and released by Walt Disney Pictures on May 28, 2010</p>
+                <a href="{% url 'page4' %}"><button class="submit-btn">Read more</button></a>
+            </article>
+            <article>
+                <h2>Epic introduces Fortnite Zero Build, a permanent battle royale mode with no building
+                </h2>
+                <span>Published: 24/03/2022</span>
+                <img src="{% static 'core/img/fort.jpg' %}" alt="">
+                <p>With the latest seasonal update for Fortnite, developer Epic Games switched off the classic building in the battle royale with a limited-time event. While it was a temporary mode, quite a few positive reactions formed out of the change, and leaks suggested Epic was looking to making the mode a permanent one. Today, Zero Build was announced, making that exact change.</p>
+                <a href="{% url 'page5' %}"><button class="submit-btn">Read more</button></a>
+            </article>
+           
+        
+{% endblock maincontent %}
+            

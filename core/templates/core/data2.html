@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blog</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="cabecalho">
+                <div class="container container-cabecalho">
+                    <a href="{% url 'home' %}" id="logo"> Tech-GAMER</a>
+                    <nav>
+                        <ul id="menu">
+                            <li><a href="{% url 'home' %}">Home</a></li>
+                            <li><a href="{% url 'all' %}">Latest</a></li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section id="banner" style="Background-image:url('{% static 'core/img/back.jpg' %}')">
+                <div class="container">
+            
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="container-main">
+                        <main>
+                            <article>
+                                <h2 class="heading-data">Best games like PUBG Mobile: BGMI, Call of Duty Mobile, Free Fire MAX, and more</h2>
+                                <span>Published: 26/03/2022</span>
+                                <img src="{% static 'core/img/bgmi.webp' %}" alt="">
+                                <p>PUBG or PlayerUnknown’s Battlegrounds has had one of the biggest impacts on the Indian gaming landscape.</p>
+                                <a href="{% url 'page6' %}"><button class="submit-btn">Read more</button></a>
+                            </article>
+                            <article>
+                                <h2>Garena Free Fire Max Redeem Codes For March 30: New List Of Freebies And Steps To Claim Them</h2>
+                                <span>Published: 23/03/2022</span>
+                                <img src="{% static 'core/img/ff.webp' %}" alt="">
+                                <p>Garena Free Fire Max redeem codes for today, March 30 are available now, bringing a fresh dose of rewards and upgrades. If you're looking to boost your gaming performance, the Free Fire Max redeem codes will help you without having it spend a single dime. We've explained everything about the Free Fire Max redeem codes here.
+
+                                </p>
+                                <a href="{% url 'page7' %}"><button class="submit-btn">Read more</button></a>
+                            </article>
+                            <article>
+                                <h2>New Call of Duty 2022: everything we know about Modern Warfare 2</h2>
+                                <span>Published:18/03/2022</span>
+                                <img src="{% static 'core/img/cod.webp' %}" alt="">
+                                <p>A new Call of Duty is coming in 2022 and that probably doesn't come as a massive surprise. Call of Duty is a series that's developed a pretty reliable release schedule and it looks like 2022 isn't going to shake things up in that area. 2023, on the other hand, could prove to be another matter.</p>
+                                <a href="{% url 'page8' %}"><button class="submit-btn">Read more</button></a>
+                            </article>    
+                           
+                            <div class="center">
+                                <div class="pagination">
+                                <a href="#">&laquo;</a>
+                                <a href="{% url 'home' %}">1</a>
+                                <a href="{% url 'data' %}" class="active">2</a>
+                                <a href="{% url 'data1' %}">3</a>
+                                <a href="#">&raquo;</a>
+                                </div>
+                              </div>   
+                        </main>
+                        <aside>
+                            <div class="aside-item" id="sobreMim">
+                                <h2>Post Contributor</h2>
+                                <img src="{% static 'core/img/gaminglogo.jpg' %}" alt="">
+                                <h3>Maindarkar Rohan</h3>
+                                <p>A Normal student of CSE Background having interest in upcoming Gaming technology.</p>
+                            </div>
+                            <div class="aside-item">
+                                <h2>Categories</h2>
+                                <nav id="categorias-links">
+                                    <ul>
+                                        <li><a href="{% url 'home' %}">Latest Games<span>5</span></a></li>
+                                        <li><a href="{% url 'data' %}">Andriod Games<span>3</span></a></li>
+                                        <li><a href="{% url 'data1' %}">Top Gaming<span>5</span></a></li>
+                                    </ul>
+                                </nav>
+                               
+                            </div>
+                            <div class="aside-item">
+                                <h2>Popular Tags</h2>
+                                <nav id="tags-popular">
+                                    <a href="{% url 'latest1' %}">Latest Games</a>
+                                    <a href="{% url 'latest2' %}">Andriod Games</a>
+                                    <a href="{% url 'latest3' %}">Top Gaming</a>
+                                </nav>
+
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+            <footer>
+                <div class="container">
+                   <p><strong><span>Developed By:</span> <a href="https://www.linkedin.com/in/rohan-maindarkar-b45000227/" target="_blank">Maindarkar Rohan</a><strong></p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

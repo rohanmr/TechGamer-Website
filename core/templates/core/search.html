@@ -1,0 +1,22 @@
+{% extends 'core/header.html' %}
+{% load static %}
+<div class="container">
+    <div class="container-main">
+        <main>
+            {% if searched %}
+            <b><h1>Your Search Results for the {{searched}}</h1></b>
+              <br>
+            {% else %}
+            <b><h1>Hey! You Forgot To Search For posts</h1></b>
+            {% for post  in things %}
+            <article>
+                <h2 class="heading-data">{{post.title}}</h2>
+                <span>Published:{{post.publishdate}}</span>
+                <a href="{{post.btnlink}}"><button class="submit-btn">Read more</button></a>
+            </article>
+            {% empty %}
+            No data Found
+            {% endfor %}   
+            {% endif %}
+        </main>
+        {% block pagination %}-{% endblock pagination %}
