@@ -7,7 +7,7 @@ Simple blog website that helps to get information on upcoming latest games.
 HTML, CSS, Python, Django.
 
 
-## Live Project Link:
+## Go to Live Site:
 https://techgamer.pythonanywhere.com/
 
 ## UI of Website
